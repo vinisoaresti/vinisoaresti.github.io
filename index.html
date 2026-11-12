@@ -1,17 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Vini Soares | Portfolio</title>
+    <meta name="description" content="Portfolio profissional de Vini Soares — Desenvolvedor Back-End, Web, Desktop e Cloud.">
     <meta name="google-site-verification" content="-KzqJRPvJw6DI2lzBTUrVDcxD6InhwbPFoCE9th5Ix4" />
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hey, welcome!👋</h1>
-    <p>This portfolio is under construction, but feel free to navigate across my projects:</p>
-        <li>Instagram Web Interface Clone: <a href="https://vinisoaresti.github.io/instagramClone" target='_blank'>view project</a>;</li>
-        <li>Creative Integration Suite (CreatIS): <a href="https://creatis2025.netlify.app/html/" target='_blank'>view project</a>;</li>
-        <li>Simple Greetings Card: <a href="https://vinisoaresti.github.io/adsIfpe/semester3/webProgramming1/greetingsCard/" target='_blank'>view project</a>.</li>
-    </ul>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#" class="nav-logo">&lt;VSTI/&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#certifications">Conquistas</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">// hello world 👋</p>
+            <h1 class="hero-name">
+                <span class="highlight">Vini Soares:</span>
+            </h1>
+            <div class="hero-role">
+                <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor"></span>
+            </div>
+            <p class="hero-description">
+                Desenvolvedor e analista de sistemas com +4 anos de experiência entregando projetos de alto impacto — do back-end à nuvem.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Ver Projetos
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Fale Comigo
+                </a>
+                <a href="https://www.linkedin.com/in/vinisoaresti/" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// quem sou</span>
+                <h2 class="section-title">Sobre Mim</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Sou desenvolvedor e analista de sistemas com mais de <strong>4 anos de experiência</strong> entregando e gerenciando projetos no prazo e com qualidade. Tenho sólida atuação com diversas tecnologias em front-end e em back-end, além de aprofundar meus estudos em React e Node.js.
+                    </p>
+                    <p>
+                        Possuo vivência em <strong>projetos internacionais de P&D</strong> para a HPE (EUA) e em sistemas de larga escala, acumulando histórico de <strong>liderança técnica</strong> e otimização de performance.
+                    </p>
+                    <p>
+                        Sou proativo e focado em inovação, buscando aplicar minhas habilidades para alcançar resultados de alto impacto, aliando conhecimento técnico com forte capacidade de aprendizado e colaboração em equipe.
+                    </p>
+                    <div class="about-info">
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Garanhuns, PE, Brasil</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:viniciussoaresti@gmail.com">viniciussoaresti@gmail.com</a>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/vinisoaresti/" target="_blank">github.com/vinisoaresti</a>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/vinisoaresti/" target="_blank">linkedin.com/in/vinisoaresti</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Projetos Internacionais</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Tecnologias Dominadas</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number">C1</div>
+                        <div class="stat-label">Inglês (TOEFL 653)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// stack técnica</span>
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias e ferramentas que utilizo para construir soluções robustas e escaláveis.</p>
+            </div>
+            <div class="skills-categories">
+                <!-- Back-End -->
+                <div class="skill-category glass-card reveal">
+                    <h3><i class="fas fa-server"></i> Back-End</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                        <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                        <span class="skill-tag"><i class="devicon-java-plain"></i> Java</span>
+                        <span class="skill-tag"><i class="devicon-csharp-plain"></i> C#</span>
+                        <span class="skill-tag"><i class="devicon-dotnetcore-plain"></i> .NET</span>
+                        <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SAP HANA XS</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> API RESTful</span>
+                        <span class="skill-tag"><i class="devicon-hibernate-plain"></i> Hibernate</span>
+                        <span class="skill-tag"><i class="fas fa-coffee"></i> JSF / JPA</span>
+                    </div>
+                </div>
+
+                <!-- Front-End -->
+                <div class="skill-category glass-card reveal">
+                    <h3><i class="fas fa-palette"></i> Front-End</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-react-original"></i> React</span>
+                        <span class="skill-tag"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML5</span>
+                        <span class="skill-tag"><i class="devicon-css3-plain"></i> CSS3</span>
+                        <span class="skill-tag"><i class="devicon-jquery-plain"></i> jQuery</span>
+                        <span class="skill-tag"><i class="fas fa-layer-group"></i> SAPUI5</span>
+                        <span class="skill-tag"><i class="fas fa-desktop"></i> Primefaces</span>
+                        <span class="skill-tag"><i class="fas fa-pencil-ruler"></i> UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category glass-card reveal">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                        <span class="skill-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                        <span class="skill-tag"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                        <span class="skill-tag"><i class="fas fa-infinity"></i> CI/CD</span>
+                        <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
+                        <span class="skill-tag"><i class="devicon-github-original"></i> GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Methodologies & Tools -->
+                <div class="skill-category glass-card reveal">
+                    <h3><i class="fas fa-cogs"></i> Metodologias & Ferramentas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-users"></i> Scrum</span>
+                        <span class="skill-tag"><i class="fas fa-code-branch"></i> Gitflow</span>
+                        <span class="skill-tag"><i class="fas fa-cubes"></i> POO / MVC</span>
+                        <span class="skill-tag"><i class="devicon-jira-plain"></i> Jira</span>
+                        <span class="skill-tag"><i class="devicon-trello-plain"></i> Trello</span>
+                        <span class="skill-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+                        <span class="skill-tag"><i class="fas fa-vial"></i> JUnit / MochaJS</span>
+                        <span class="skill-tag"><i class="fas fa-gem"></i> SOLID / KISS / DRY</span>
+                        <span class="skill-tag"><i class="devicon-linux-plain"></i> Linux</span>
+                        <span class="skill-tag"><i class="fas fa-robot"></i> LLM Prompts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// trajetória profissional</span>
+                <h2 class="section-title">Experiência</h2>
+                <p class="section-subtitle">Projetos nacionais e internacionais com impacto real em performance e custos.</p>
+            </div>
+            <div class="timeline reveal">
+                <!-- Atlântico -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2021 — Fev 2024</div>
+                    <div class="timeline-card glass-card">
+                        <h3>Analista de Desenvolvimento & Líder de Time</h3>
+                        <div class="company"><i class="fas fa-building"></i> Instituto Atlântico · Remoto</div>
+                        <p>
+                            Atuei em <strong>dois projetos internacionais de P&D para a HPE (EUA)</strong>, envolvendo gerenciamento de ativos computacionais.
+                        </p>
+                        <p>
+                            Projetei e desenvolvi sistemas em C#, .NET e MySQL para <strong>análise e classificação de performance</strong> de ativos, gerando rankings de desempenho com recomendações que viabilizaram <strong>redução significativa de custos operacionais</strong>.
+                        </p>
+                        <p>
+                            Sintetizei uma aplicação <strong>conteinerizada integrando Prometheus + Grafana + Node.js</strong> para monitoramento de métricas.
+                        </p>
+                        <p>
+                            Atuei como <strong>líder de equipe</strong>, facilitando demandas entre o time técnico e stakeholders internacionais.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alltax -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dez 2019 — Jun 2021</div>
+                    <div class="timeline-card glass-card">
+                        <h3>Desenvolvedor Web</h3>
+                        <div class="company"><i class="fas fa-building"></i> Alltax Platform · Remoto</div>
+                        <p>
+                            Desenvolvi APIs e funcionalidades críticas no <strong>TIMP — Tax Intelligence and Management Platform</strong>, um sistema de alcance nacional.
+                        </p>
+                        <p>
+                            Realizei manutenção preventiva e evolutiva no front-end e back-end da aplicação.
+                        </p>
+                        <p>
+                            <strong>Destaque:</strong> otimizei um módulo reduzindo o tempo de resposta de <strong>3 minutos para menos da metade</strong>, aplicando técnicas avançadas de normalização no banco de dados.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SAP HANA XS</span>
+                            <span class="tech-tag">SAPUI5</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// formação</span>
+                <h2 class="section-title">Formação Acadêmica</h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card glass-card reveal">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <div class="edu-institution">IFPE — Garanhuns (PE)</div>
+                    <div class="edu-date">Jul 2023 — Atualmente</div>
+                    <p>
+                        Curso superior expandindo repertório em segurança de sistemas, matemática e estatística aplicadas à computação, sistemas embarcados e desenvolvimento mobile.
+                    </p>
+                </div>
+                <div class="edu-card glass-card reveal">
+                    <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Técnico em Informática</h3>
+                    <div class="edu-institution">IFPE — Garanhuns (PE)</div>
+                    <div class="edu-date">Fev 2015 — Dez 2018</div>
+                    <p>
+                        Curso técnico integrado ao ensino médio: lógica de programação, algoritmos, orientação a objetos, desenvolvimento web, bancos de dados, testes automatizados e metodologias ágeis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// portfólio open-source</span>
+                <h2 class="section-title">Projetos</h2>
+                <p class="section-subtitle">Selecione um projeto para ver detalhes e uma prévia em funcionamento.</p>
+            </div>
+            <div class="projects-gallery reveal">
+                <!-- Selector -->
+                <div class="projects-selector">
+                    <div class="project-thumb glass-card active" data-project="creatis" onclick="selectProject('creatis')">
+                        <h4><i class="fas fa-rocket"></i> Creative Integration Suite</h4>
+                        <p>SaaS que automatiza fluxos de ideação, desenvolvimento, correção e lançamento de conteúdo em agências de marketing.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SaaS</span>
+                        </div>
+                    </div>
+                    <div class="project-thumb glass-card" data-project="instagram" onclick="selectProject('instagram')">
+                        <h4><i class="fab fa-instagram"></i> Instagram Clone</h4>
+                        <p>Aplicação web inspirada na página de login do Instagram, com fidelidade visual e responsividade.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-thumb glass-card" data-project="timbiriche" onclick="selectProject('timbiriche')">
+                        <h4><i class="fas fa-gamepad"></i> Timbiriche</h4>
+                        <p>Implementação minimalista do clássico jogo dos pontinhos, explorando manipulação de DOM e lógica concisa.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Display -->
+                <div class="project-display">
+                    <div class="project-display-card glass-card" id="projectDisplay">
+                        <div class="project-image-wrapper">
+                            <img id="projectImage" src="assets/projects/creatis.png" alt="Preview do projeto">
+                        </div>
+                        <div class="project-detail-info">
+                            <h3 id="projectTitle">Creative Integration Suite</h3>
+                            <p id="projectDesc">
+                                Versão inicial do TCC: um SaaS que automatiza fluxos de ideação, desenvolvimento, correção e lançamento de conteúdo em agências de marketing. Está sendo refatorado para incluir responsividade e novas tecnologias.
+                            </p>
+                            <div class="project-links">
+                                <a id="projectLive" href="https://creatis-ten.vercel.app/" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Ver ao Vivo
+                                </a>
+                                <a id="projectRepo" href="https://github.com/vinisoaresti/creativeIntegrationSuite_old" target="_blank" class="btn btn-outline">
+                                    <i class="fab fa-github"></i> Código Fonte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section id="certifications">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// conquistas</span>
+                <h2 class="section-title">Certificações & Conquistas</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Reconhecimentos no Instituto Atlântico</h4>
+                    <div class="cert-issuer">Instituto Atlântico · 2021 — 2024</div>
+                    <p>Excelência em proatividade e consistência; monitor no Academy Future; destaque da organização com publicação no Instagram oficial.</p>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h4>TOEFL-ITP — 653/677</h4>
+                    <div class="cert-issuer">CCAA · Jul 2018</div>
+                    <p>Classificação internacional C1 (Avançado/Proficiente) no Test of English as a Foreign Language.</p>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Mastering English Course</h4>
+                    <div class="cert-issuer">CCAA · 2013 — 2018</div>
+                    <p>Curso completo de inglês (básico ao avançado): interpretação, escrita técnica, fala e argumentação. Média final: 93.83/100.</p>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h4>1º Lugar — Processo Seletivo IFPE</h4>
+                    <div class="cert-issuer">IFPE · 2015</div>
+                    <p>Conquistou o 1º lugar no processo seletivo para o curso técnico integrado em Informática.</p>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h4>Redação ENEM — 900/1000</h4>
+                    <div class="cert-issuer">ENEM · 2018</div>
+                    <p>Nota 900 na redação do Exame Nacional do Ensino Médio.</p>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h4>Projetos de Extensão</h4>
+                    <div class="cert-issuer">IFPE · 2016 — 2017</div>
+                    <p>Voluntário e bolsista em projetos educacionais, ministrando curso introdutório de programação para jovens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// idiomas</span>
+                <h2 class="section-title">Idiomas</h2>
+            </div>
+            <div class="languages-grid">
+                <div class="lang-card glass-card reveal">
+                    <div class="lang-icon">🇧🇷</div>
+                    <h4>Português</h4>
+                    <div class="lang-level">Nativo (C2)</div>
+                    <div class="lang-bar-track">
+                        <div class="lang-bar-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="lang-card glass-card reveal">
+                    <div class="lang-icon">🇺🇸</div>
+                    <h4>Inglês</h4>
+                    <div class="lang-level">Avançado / Proficiente (C1)</div>
+                    <div class="lang-bar-track">
+                        <div class="lang-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="lang-card glass-card reveal">
+                    <div class="lang-icon">🇫🇷</div>
+                    <h4>Francês</h4>
+                    <div class="lang-level">Iniciante (A1)</div>
+                    <div class="lang-bar-track">
+                        <div class="lang-bar-fill" style="width: 15%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">// vamos conversar</span>
+                <h2 class="section-title">Contato</h2>
+                <p class="section-subtitle">Estou aberto a novas oportunidades e colaborações. Vamos criar algo incrível juntos!</p>
+            </div>
+            <div class="contact-links reveal">
+                <a href="mailto:viniciussoaresti@gmail.com" class="contact-link glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>viniciussoaresti@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vinisoaresti/" target="_blank" class="contact-link glass-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/vinisoaresti/" target="_blank" class="contact-link glass-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://wa.me/5581989217291" target="_blank" class="contact-link glass-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 — Vini Soares. Feito com tokens 🤖 e engenharia de prompt 🤓.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
